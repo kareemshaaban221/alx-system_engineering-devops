@@ -4,6 +4,10 @@ for i in {1..10}
 do
 if [ "$i" == "$i" ]
 then
-echo "Best School"
+printf "Best School"
+if [ "$i" != "10" ]
+then
+printf "\n"
+fi
 fi
 done
