@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-# this script print Best School 10 times.
+# This script is displaying "Best School" 10 times
 for i in {1..10}
 do
+if [ "$i" == "$i" ]
+then
 echo "Best School"
+fi
 done
