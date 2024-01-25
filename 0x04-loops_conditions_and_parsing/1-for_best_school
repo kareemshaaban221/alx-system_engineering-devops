@@ -3,6 +3,6 @@
 str="Best School"
 for (( i=0; i<9; i++ ))
 do
-    printf "$str\n"
+    printf "%s\n" "$str"
 done
-printf "$str"
+printf "%s" "$str"
