@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
+
 i=0
 while (( i < 10 ))
 do
-printf "Best School"
-if (( i < 9 ))
-then
-printf "\n"
-fi
-(( i++ ))
+    echo "Best School"
+    (( i++ ))
 done
