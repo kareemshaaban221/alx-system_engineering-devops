@@ -2,12 +2,12 @@
 # This script is displaying "Best School" 10 times
 catstr=$(cat /etc/passwd)
 i=1
-str=$(echo $catstr | cut -d " " -f ${i})
-while [ ! -z "$str" ]
+str=$(echo ${catstr} | cut -d " " -f "${i}")
+while [ -n "$str" ]
 do
-    echo $str | cut -d ":" -f 1,3,6
+    echo "$str" | cut -d ":" -f 1,3,6
     (( i++ ))
-    str=$(echo $catstr | cut -d " " -f ${i})
+    str=$(echo ${catstr} | cut -d " " -f "${i}")
 done
 
 # i=${$#lines}
