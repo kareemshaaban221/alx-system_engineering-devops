@@ -1,8 +1,23 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
-lines=$(cat /etc/passwd)
-for line in $lines
+catstr=$(cat /etc/passwd)
+i=1
+str=$(echo $catstr | cut -d " " -f ${i})
+while [ ! -z "$str" ]
 do
-    echo "$line" | cut -d ":" -f 1,3,6
-    #echo "$file" | cut -d "-" -f 2
+    echo $str | cut -d ":" -f 1,3,6
+    (( i++ ))
+    str=$(echo $catstr | cut -d " " -f ${i})
 done
+
+# i=${$#lines}
+# while (( i > 0 ))
+# do
+#     echo $i
+#     (( i-- ))
+# done
+# for line in $lines
+# do
+#     echo "$line" | cut -d ":" -f 1,3,6
+#     #echo "$file" | cut -d "-" -f 2
+# done
