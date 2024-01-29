@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # description
-# shellcheck disable=SC2009
 
 ps auxf | grep bash | awk '{print $2 " " $1}'
