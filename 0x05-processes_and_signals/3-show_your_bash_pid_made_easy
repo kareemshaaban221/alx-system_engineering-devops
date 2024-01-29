@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # description
 
-ps auxf | grep bash | awk '{print $2 " " $1}'
+pgrep -l bash
