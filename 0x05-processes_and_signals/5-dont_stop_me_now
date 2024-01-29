@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # description
 
-kill $(pgrep -l bash | awk '{print $1}')
+kill "$(ps -x | pgrep -f bash)"
