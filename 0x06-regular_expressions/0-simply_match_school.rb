@@ -2,4 +2,4 @@
 # document
 
 text = gets
-puts text.match("/School/")
+puts text.scan("/School/")
