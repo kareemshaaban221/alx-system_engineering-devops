@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 # document
 
-text = gets
-puts text.scan("/School/")
+puts ARGV[0].scan("/School/")
