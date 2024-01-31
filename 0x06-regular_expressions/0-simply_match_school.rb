@@ -2,4 +2,4 @@
 # document
 
 text = gets
-text.match("School")
+text.match("/School/")
