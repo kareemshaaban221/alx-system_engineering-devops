@@ -2,5 +2,5 @@
 # networking
 
 filename="/etc/hosts"
-echo "127.0.0.2\tlocalhost\n" >> "$filename"
-echo "8.8.8.8\tfacebook.com\n" >> "$filename"
+echo "\n127.0.0.2\tlocalhost\n" >> "$filename"
+echo "\n8.8.8.8\tfacebook.com\n" >> "$filename"
