@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # networking
 
-ifconfig | grep "inet " | awk {'print $2'}
+hostname -I | cut -d' ' -f1 ; hostname -i
